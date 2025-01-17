@@ -30,6 +30,10 @@ app.get("/alert", function (req, res){
     res.render("alert", {});
 });
 
+app.get("/num", function (req, res){
+    res.render("num", {});
+});
+
 // 서버 띄울 대 포트 정보 셋팅 및 처음 실행 시 필요한 기능 수행 가능
 app.listen(3000, function(){
     console.log("server running");
